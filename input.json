@@ -1,0 +1,62 @@
+[
+  {
+    "id": "TEST-001",
+    "text": "ABCDEFGHIJKLMNOP",
+    "pattern": "EFG",
+    "description": "Short string - Simple pattern match"
+  },
+  {
+    "id": "TEST-002",
+    "text": "The quick brown fox jumps over the lazy dog. The fox is quick and clever.",
+    "pattern": "fox",
+    "description": "Medium string - Multiple occurrences"
+  },
+  {
+    "id": "TEST-003",
+    "text": "AABAACAADAABAABA",
+    "pattern": "AABA",
+    "description": "Short string - Repeated pattern with potential hash collisions"
+  },
+  {
+    "id": "TEST-004",
+    "text": "Hello World! Welcome to the world of string matching algorithms.",
+    "pattern": "world",
+    "description": "Medium string - Case sensitive search"
+  },
+  {
+    "id": "TEST-005",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "pattern": "dolor",
+    "description": "Long string - Latin text with multiple pattern occurrences"
+  },
+  {
+    "id": "TEST-006",
+    "text": "abcdefghijklmnopqrstuvwxyz",
+    "pattern": "xyz",
+    "description": "Medium string - Pattern not found"
+  },
+  {
+    "id": "TEST-007",
+    "text": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+    "pattern": "AAAB",
+    "description": "Worst case scenario - Many hash matches but no string match"
+  },
+  {
+    "id": "TEST-008",
+    "text": "JavaScript is a programming language. Java is different from JavaScript. Learning Java and JavaScript together can be confusing.",
+    "pattern": "Java",
+    "description": "Long string - Substring matching within larger words"
+  },
+  {
+    "id": "TEST-009",
+    "text": "1234567890123456789012345678901234567890",
+    "pattern": "567890",
+    "description": "Numeric string - Pattern repetition"
+  },
+  {
+    "id": "TEST-010",
+    "text": "The implementation of the Rabin-Karp algorithm uses polynomial rolling hash function for efficient pattern matching in text strings.",
+    "pattern": "algorithm",
+    "description": "Technical description - Single occurrence"
+  }
+]
