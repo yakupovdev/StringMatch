@@ -6,7 +6,16 @@ import com.yakupovdev.stringmatch.model.SearchResult;
 import java.util.ArrayList;
 import java.util.List;
 
-
+/**
+ * Implementation of Rabin-Karp Algorithm using Polynomial Rolling Hash
+ *
+ * Time Complexity: O(n + m) average case, O(n*m) worst case
+ * Space Complexity: O(1)
+ *
+ * Where:
+ * n = length of text
+ * m = length of pattern
+ */
 public class RabinKarpAlgorithm {
 
     private static final long PRIME = 101;

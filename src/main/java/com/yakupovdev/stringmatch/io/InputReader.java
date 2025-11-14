@@ -11,6 +11,9 @@ import java.io.Reader;
 import java.lang.reflect.Type;
 import java.util.List;
 
+/**
+ * Reads search requests from JSON file
+ */
 public class InputReader {
 
     private final Gson gson;
@@ -21,6 +24,13 @@ public class InputReader {
                 .create();
     }
 
+    /**
+     * Read search requests from JSON file
+     *
+     * @param filename Path to JSON file
+     * @return List of search requests
+     * @throws IOException If file cannot be read
+     */
     public List<SearchRequest> readFromJson(String filename) throws IOException {
         try (Reader reader = new FileReader(filename)) {
             Type listType = new TypeToken<List<SearchRequest>>() {

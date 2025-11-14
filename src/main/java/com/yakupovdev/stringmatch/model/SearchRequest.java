@@ -2,7 +2,9 @@ package com.yakupovdev.stringmatch.model;
 
 import com.google.gson.annotations.SerializedName;
 
-
+/**
+ * Represents a search request with text and pattern
+ */
 public class SearchRequest {
 
     @SerializedName("id")

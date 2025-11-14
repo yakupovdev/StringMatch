@@ -2,7 +2,9 @@ package com.yakupovdev.stringmatch.model;
 
 import java.util.List;
 
-
+/**
+ * Represents the result of a pattern search operation
+ */
 public class SearchResult {
 
     private String requestId;

@@ -8,8 +8,18 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-
+/**
+ * Writes search results and metrics to CSV files
+ */
 public class OutputWriter {
+
+    /**
+     * Write search results to CSV file
+     *
+     * @param results List of search results
+     * @param filename Output CSV filename
+     * @throws IOException If file cannot be written
+     */
     public void writeToCSV(List<SearchResult> results, String filename) throws IOException {
         try (CSVWriter writer = new CSVWriter(new FileWriter(filename))) {
             String[] header = {
@@ -50,6 +60,9 @@ public class OutputWriter {
         writeMetricsCSV(results, "metrics.csv");
     }
 
+    /**
+     * Write detailed metrics to separate CSV file
+     */
     private void writeMetricsCSV(List<SearchResult> results, String filename) throws IOException {
         try (CSVWriter writer = new CSVWriter(new FileWriter(filename))) {
             String[] header = {
